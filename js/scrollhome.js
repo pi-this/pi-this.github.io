@@ -1,10 +1,10 @@
 var i = 0;
-var txt = "pi-this, pi-that. Pi-this is currently in progress...";
+var txt = "3.1415926535897932384626433832795028841971693993751058209749445923078...";
 var speed = 50;
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
+    document.getElementById("pi").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
