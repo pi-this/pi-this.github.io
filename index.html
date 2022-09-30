@@ -6,8 +6,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="https://pi-this.github.io/css/homestyle.css"></link>
-<script type="text/js" src="https://pi-this.github.io/js/scrollhome.js">
-</script>
 </link>
 </head>
 <body>
@@ -44,6 +42,22 @@
   </div>
 </div>
 
+<script>
+var i = 0;
+var txt = "3.1415926535897932384626433832795028841971693993751058209749445923078...";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("pi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
+	
 </body>
 </html>
 
