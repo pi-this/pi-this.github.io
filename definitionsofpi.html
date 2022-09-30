@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>pi-this</title>
+<link rel="icon" href="https://pi-this/pi-this.github.io/logo.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://pi-this.github.io/css/homestyle.css"></link>
+</link>
+</head>
+<body>
+	
+
+<div class="header">
+  <t>pi-this</t>
+  <p>Pi this, pi that @ pi-this.github.io</p>
+  <p id="pi" ></p>
+</div>
+
+<div class="topnav">
+  <a href="https://pi-this.github.io/">Home</a>
+  <a href="https://pi-this.github.io/definitionsofpi.html">definitions</a>
+</div>
+
+<div class="row">
+	<center><h1>Definitions</h1></center>
+  <div class="column">
+    <h2>Pi</h2>
+    <p>The word pi</p>
+    <p></p>
+  </div>
+  
+  <div class="column">
+    <center><img src="https://raw.githubusercontent.com/pi-this/pi-this.github.io/main/pithismascotwithbackground.png" width=500px high=400px</img></center>
+  </div>
+  
+  <div class="column">
+    <h2>Possibilities</h2>
+    <p>The sky's the limit, this is a popular phrase, it suggests that possibilities are endless. When creating, possibilities are endless, the sky's the limit! If anyone digs deep enough that digger can find what he or she is looking for, all it takes is determination. This actually applies to anything, set a goal, work your way up to that goal, and master it.<p>
+	<p>Pi is a long number, three point one four only scratches the surface of this number that's value is only a little over three. This number is endless! Just like pi, possibilities are endless as well, pi that</p>
+	<p>This site is made possible by <a href="https://github.com">github</a>.</p>
+  </div>
+</div>
+
+<script>
+var i = 0;
+var txt = "3.1415926535897932384626433832795028841971693993751058209749445923078...";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("pi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
+	
+</body>
+</html>
