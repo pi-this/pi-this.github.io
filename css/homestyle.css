@@ -25,7 +25,6 @@ t {
 
 /* Style the topnav links */
 .topnav a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -33,22 +32,16 @@ t {
   text-decoration: none;
 }
 
-.topnav b {
+#leftlink {
   float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+}
+
+#rightlink {
+  float: right;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav b:hover {
   background-color: #ddd;
   color: black;
 }
