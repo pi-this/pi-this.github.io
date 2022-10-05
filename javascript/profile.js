@@ -17,10 +17,10 @@ typeWriter();
 
 function formChanged() {
   var USname = document.getElementsByName("username")[0].value;
-  localStorage.setItem("Username", USname);
+  localStorage.setItem("Username1", USname);
 }
 
 
 
-document.getElementById("demo").innerHTML = localStorage.getItem("Username");
+document.getElementById("demo").innerHTML = localStorage.getItem("Username1");
 
