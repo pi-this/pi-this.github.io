@@ -20,7 +20,7 @@ function formChanged() {
   localStorage.setItem("Username1", USname);
 }
 
-if (localStorage.getItem("Username1") != "") {
+if (localStorage.getItem("Username1") == "") {
   localStorage.setItem("Username1", "pi-this user")
 }
 
