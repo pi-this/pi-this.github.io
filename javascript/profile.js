@@ -23,6 +23,7 @@ function formChanged() {
 if (localStorage.getItem("Username1") == "") {
   localStorage.setItem("Username1", "pi-this user")
 }
+console.log(localStorage.getItem("Username1")
 
 
 document.getElementById("demo").innerHTML = localStorage.getItem("Username1");
