@@ -25,5 +25,5 @@ function formChanged() {
 document.getElementById("demo").innerHTML = localStorage.getItem("Username");
 
 if document.getElementById("demo").innerHTML == "" {
-  localStorage.setItem("Username", "pi-this user);
+  localStorage.setItem("Username", "pi-this user");
 }
