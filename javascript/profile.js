@@ -16,10 +16,14 @@ typeWriter();
 
 
 function formChanged() {
-	var USname = document.getElementsByName("username")[0].value;
-    localStorage.setItem("Username", USname);
+  var USname = document.getElementsByName("username")[0].value;
+  localStorage.setItem("Username", USname);
 }
 
 
 
 document.getElementById("demo").innerHTML = localStorage.getItem("Username");
+
+if document.getElementById("demo").innerHTML == "" {
+  localStorage.setItem("Username", "pi-this user);
+}
