@@ -27,7 +27,7 @@
 <h1>profile</h1>
 Username:<p id="demo"></p>
 	
-Avatar:<img id="avatar"></img>
+Avatar:<img id="avatar" class="imgavatar"></img>
 	
 	
 
@@ -40,7 +40,7 @@ Avatar:<img id="avatar"></img>
 </script>
 <script>
 var AVR = localStorage.getItem("AVATAR");
-$("#avatar").attr("src",AVR);
+document.querySelector(".imgavatar").src = AVR;
 </script>
 	
 </body>
