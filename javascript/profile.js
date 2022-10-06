@@ -20,8 +20,15 @@ function formChanged() {
   localStorage.setItem("Username1", USname);
 }
 
-function newavatar() {
-  var AVchoice = document.getElementsByName("myRadio")[0].value;
+function newavatar_logo() {
+  var AVchoice = document.getElementsByName("myRadio-1");
+  AVchoice.src = "https://pi-this.github.io/logo.png"
+  localStorage.setItem("AVATAR", AVchoice);
+}
+
+function newavatar_mrpi() {
+  var AVchoice = document.getElementsByName("myRadio-2");
+  AVchoice.src = "https://pi-this.github.io/pithismascotwithbackground.png"
   localStorage.setItem("AVATAR", AVchoice);
 }
 
