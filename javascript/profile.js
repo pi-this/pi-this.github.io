@@ -21,13 +21,13 @@ function formChanged() {
 }
 
 function newavatar_logo() {
-  var AVchoice = document.getElementsByName("myRadio-1");
+  var AVchoice = document.getElementsById("myRadio-1");
   AVchoice.src = "https://pi-this.github.io/logo.png"
   localStorage.setItem("AVATAR", AVchoice);
 }
 
 function newavatar_mrpi() {
-  var AVchoice = document.getElementsByName("myRadio-2");
+  var AVchoice = document.getElementsById("myRadio-2");
   AVchoice.src = "https://pi-this.github.io/pithismascotwithbackground.png"
   localStorage.setItem("AVATAR", AVchoice);
 }
