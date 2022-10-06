@@ -20,5 +20,10 @@ function formChanged() {
   localStorage.setItem("Username1", USname);
 }
 
-document.getElementById("demo").innerHTML = localStorage.getItem("Username1");
+function newavatar() {
+  var AVchoice = document.getElementsByName("myRadio")[0].value;
+  localStorage.setItem("AVATAR", AVchoice);
+}
 
+document.getElementById("demo").innerHTML = localStorage.getItem("Username1");
+document.getElementById("avatar").innerHTML = localStorage.getItem("AVATAR");
