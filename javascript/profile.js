@@ -21,15 +21,11 @@ function formChanged() {
 }
 
 function newavatar_logo() {
-  var AVchoice = document.getElementsById("myRadio-1");
-  AVchoice.src = "https://pi-this.github.io/logo.png"
-  localStorage.setItem("AVATAR", AVchoice);
+  localStorage.setItem("AVATAR", "https://pi-this.github.io/logo.png");
 }
 
 function newavatar_mrpi() {
-  var AVchoice = document.getElementsById("myRadio-2");
-  AVchoice.src = "https://pi-this.github.io/pithismascotwithbackground.png"
-  localStorage.setItem("AVATAR", AVchoice);
+  localStorage.setItem("AVATAR", "https://pi-this.github.io/pithismascotwithbackground.png");
 }
 
 document.getElementById("demo").innerHTML = localStorage.getItem("Username1");
