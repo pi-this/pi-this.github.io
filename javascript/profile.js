@@ -30,3 +30,4 @@ function newavatar_mrpi() {
 
 document.getElementById("demo").innerHTML = localStorage.getItem("Username1");
 document.getElementById("avatar").innerHTML = localStorage.getItem("AVATAR");
+document.getElementById("showmoney").innerHTML = localStorage.getItem("pi-coins");
