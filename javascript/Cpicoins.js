@@ -1,5 +1,4 @@
 function addcoins() {
+  localStorage.setItem("pi-coins", +1);
   var coins = localStorage.getItem("pi-coins");
-  var coins += 5
-  localStorage.setItem("pi-coins", coins);
 }
