@@ -1,7 +1,8 @@
-function addcoins() {
+function addcoins() { 
   var coins = localStorage.getItem("pi-coins");
+  alert(coins)
 
-  number++;
+  coins++;
   coins.textContent = number.toString();
   localStorage.setItem("pi-coins", coins.textContent);
 }
