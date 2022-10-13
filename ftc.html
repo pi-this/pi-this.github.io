@@ -1,11 +1,146 @@
-<pre>
-programming tutorials:
-<a href="https://youtu.be/Bmna_smengw">https://youtu.be/Bmna_smengw</a>
-<a href="https://youtu.be/CdcpNZzekb0">https://youtu.be/CdcpNZzekb0</a>
-<a href="https://youtu.be/tRDSj2AZJuI">https://youtu.be/tRDSj2AZJuI</a>
-<a href="https://youtu.be/RMYvH2SHUaM">https://youtu.be/RMYvH2SHUaM</a>
-<a href="https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/onbot-java-guide.pdf">https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/onbot-java-guide.pdf</a>
-<a href="https://youtu.be/otiJ9bOqH38">https://youtu.be/otiJ9bOqH38</a>
-<a href="https://youtu.be/l7oPwF9yDTI">https://youtu.be/l7oPwF9yDTI</a>
-<a href="https://ftctutorials.com/translations/en-us/Robot/ProgrammingOptions.pdf">https://ftctutorials.com/translations/en-us/Robot/ProgrammingOptions.pdf</a>
-</pre>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>pi-this</title>
+<link rel="icon" href="https://pi-this.github.io/logo.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://pi-this.github.io/css/homestyle.css"></link>
+</link>
+</head>
+<body>
+	
+
+<div class="header">
+  <t>pi-this</t>
+  <p>Pi this, pi that @ pi-this.github.io</p>
+  <p id="pi" ></p>
+</div>
+
+<div class="topnav">
+  <a id="leftlink" href="https://pi-this.github.io/">Home</a>
+  <a id="leftlink" href="https://pi-this.github.io/definitionsofpi.html">definitions</a>
+  <a id="rightlink" href="https://pi-this.github.io/profile.html">private profile</a>
+  <a id="rightlink" href="https://pi-this.github.io/profilesettings.html">profile settings</a>
+  <a id="rightlink" href="https://pi-this.github.io/collect.html">collect</a>
+  
+</div>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">jQuery</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Node.js</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Page Content</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+  </div>
+</div>
+
+
+<script>
+var i = 0;
+var txt = "3.1415926535897932384626433832795028841971693993751058209749445923078...";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("pi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+  
+function Search() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+	
+</body>
+</html>
