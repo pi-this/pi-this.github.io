@@ -8,6 +8,17 @@ body {
   padding: 20px;
 }
 
+input[type=button] {
+  padding: 5px 10px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ddd;
+  border: 1px solid #ccc;
+}
+input[type=button]:hover {
+  background: #ccc;
+}
 
 
 .confirm {
