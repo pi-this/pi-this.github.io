@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>pi-this</title>
+<link rel="icon" href="https://pi-this.github.io/logo.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://pi-this.github.io/css/homestyle.css"></link> 
+</link>
+</head>
+<body>
+	
 
+<div class="header">
+  <t>pi-this</t>
+  <p>Pi this, pi that @ pi-this.github.io</p>
+  <p id="pi" ></p>
+</div>
+
+<div class="topnav">
+  <a id="leftlink" href="https://pi-this.github.io/">Home</a>
+  <a id="leftlink" href="https://pi-this.github.io/definitionsofpi">definitions</a>
+  <a id="rightlink" href="https://pi-this.github.io/profile">private profile</a>
+  <a id="rightlink" href="https://pi-this.github.io/profilesettings">profile settings</a>
+  <a id="leftlink" href="https://pi-this.github.io/programming">coding</a>
+  <a id="leftlink" href="https://pi-this.github.io/games">games</a>
+  <a id="leftlink" href="https://pi-this.github.io/art">art</a>
+</div>
+ 
+<div class="row">
+	<center>
+	<h1>Art</h1>
+        
+	<center>
+</div>
+
+<script>
+var i = 0;
+var txt = "3.1415926535897932384626433832795028841971693993751058209749445923078...";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("pi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
+	
+</body>
+</html
