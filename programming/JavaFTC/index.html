@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+            .header h1 {
+                font-size: 50px;
+            }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Java FTC</h1>
+        <p>programming a FTC robot using Java</p>
+    </div>
+
+    <div class="topnav">
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>What All Code Needs</h2>
+                <h5>Every Java program in FTC is writen with the same layout, lets talk about this layout</h5>
+                <p>Within the Java FTC layout there are things that must be added to your code these things include:</p>
+                <ol>
+                    <li>declaring the package name</li>
+                    <img src="package.png" alt="example">
+                    <li>importing the nessasary modules</li>
+                    <img src="imports.png" alt="example">
+                    <li>setting the program to TeleOp or Autonomous</li>
+                    <img src="TeleOp.png" alt="example">
+                    <li>creating all the nessasary public classes and functions</li>
+                    <img src="classfunction.png" alt="example">
+                </ol>
+            </div>
+            <div class="card">
+                <h2>Important Things To Know</h2>
+                <h5>Here I will list some important Java FTC coding tips</h5>
+                <ul style="list-style-type:circle;">
+                    <li>sending a message to the driver's station</li>
+                    <img src="addata.png" alt="example">
+                    <li>setting motor direction</li>
+                    <img src="motordirection.png" alt="example">
+                    <li>run using encoders</li>
+                    <img src="encoders.png" alt="example">
+                    <li>setting motors to a hardware map</li>
+                    <img src="hardware.png" alt="example">
+                </ul>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About</h2>
+                <p>
+                    <img src="https://www.firstinspires.org/sites/all/themes/first/assets/images/2020/first-horz-rgb.png" alt="example" width="50">  |  <a href="https://www.firstinspires.org/robotics/ftc
+">The FTC website</a>
+                </p>
+
+                <p>
+                    <img src="https://www.firstinspires.org/sites/all/themes/first/assets/images/2020/first-horz-rgb.png" alt="example" width="50">  |  <a href="https://www.firstinspires.org/resource-library/ftc/technology-information-and-resources
+">The FTC programming resource library</a>
+                </p>
+            </div>
+            <div class="card">
+                <h3>Sample Code:</h3>
+                <iframe src="C:\Users\world\OneDrive\Desktop\JavaFTC\samples" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+                <a href="/samples">can also be found on github</a>
+
+            </div>
+            <div class="card">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    </div>
+
+</body>
+</html>
