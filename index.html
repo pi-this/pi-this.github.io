@@ -28,7 +28,8 @@
 </div>
 
 <div class="row">
-	<center><h1>Home Page</h1></center>
+	<center><h1>Home Page</h1>
+	<a id="date"></a></center>
   <div class="column">
     <h2>pi-this</h2>
     <p>Primarily, pi-this is a website made to share knowledge and information falling within the categories of electronics, computer software uses, programming, developing new ideas, and anything else that proteins to the word pi.</p>
@@ -49,7 +50,27 @@
 	
 </div>
 
+<script type="text/javascript">
+window.onload = function(){day();}
+function day()
+{
 
+var textarray = new Array();
+textarray[0] = "Sunday";
+textarray[1] = "Monday";
+textarray[2] = "Tuesday";
+textarray[3] = "Wednessday";
+textarray[4] = "Thursday";
+textarray[5] = "Friday";
+textarray[6] = "Saterday";
+
+var d = new Date(); /*** create a date object for use ***/
+var i = d.getDay(); /*** use the date object to get the day of the week - this will be a number from 0 to 6 - sunday=0, saturday=6 -it's the way counting works in javascript it starts at 0 like in the arrays ***/
+document.getElementById("date").innerHTML = textarray[i];
+}
+</script>
+
+	    
 <script>
 var i = 0;
 var txt = "3.1415926535897932384626433832795028841971693993751058209749445923078...";
