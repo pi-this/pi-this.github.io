@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: Arial;
+    font-family: Helvetica;
     padding: 10px;
     background: #7b91da;
   }
@@ -173,3 +173,4 @@
   .dropdown-content a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
