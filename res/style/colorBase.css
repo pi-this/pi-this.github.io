@@ -1,7 +1,8 @@
-
+* {
+  font-family: "Times New Roman", Times, serif;
+}
   
   body {
-    font-family: Helvetica;
     padding: 10px;
     background: #7b91da;
   }
@@ -169,5 +170,6 @@
   .dropdown-content a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
 
 
