@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Coming Soon';
-    font-style: italic;
-  }
+
   
   body {
     font-family: Helvetica;
@@ -173,4 +169,5 @@
   .dropdown-content a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
 
